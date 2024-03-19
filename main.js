@@ -128,7 +128,10 @@ var voznaEmbed = document.getElementById("vozna");
 var video_1Embed = document.getElementById("video_1");
 var video_2Embed = document.getElementById("video_2");
 var video_3Embed = document.getElementById("video_3");
-
+function getVideoId(element) {
+  var attrVV = element.getAttribute('vvideo_id');
+  return attrVV; 
+}
 // videoEmbed.insertAdjacentHTML(
 //   "beforeend",
 //   '<iframe class="videoElement" src="https://player.vimeo.com/video/865926183?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="100%" height="1000%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
@@ -147,21 +150,20 @@ voznaEmbed.insertAdjacentHTML(
   "beforeend",
   '<iframe class="videoElement" src="https://player.vimeo.com/video/866280349?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="110%" height="110%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 );
-
+var attrVV1 = getVideoId(video_1Embed);
 video_1Embed.insertAdjacentHTML(
   "beforeend",
-  '<iframe class="videoElement" src="https://player.vimeo.com/video/874832405?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
+  '<iframe class="videoElement" src="https://player.vimeo.com/video/' + attrVV1 + '?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 );
-// vvideo_id
-//
-var attrVV = video_2Embed.getAttribute('vvideo_id');
+var attrVV2 = getVideoId(video_2Embed);
 video_2Embed.insertAdjacentHTML(
   "beforeend",
-  '<iframe class="videoElement" src="https://player.vimeo.com/video/' + attrVV + '?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
+  '<iframe class="videoElement" src="https://player.vimeo.com/video/' + attrVV2 + '?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 );
+var attrVV3 = getVideoId(video_3Embed);
 video_3Embed.insertAdjacentHTML(
   "beforeend",
-  '<iframe class="videoElement" src="https://player.vimeo.com/video/874832614?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
+  '<iframe class="videoElement" src="https://player.vimeo.com/video/' + attrVV3 + '?autopause=0&portrait=0" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 );
 
 function startVideoEmbed(element) {
