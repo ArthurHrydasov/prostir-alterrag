@@ -124,7 +124,7 @@ allSchemesProgress[1].click();
 
 var videoEmbed = document.querySelector(".forest_video_embed");
 var bogachEmbed = document.getElementById("bogach");
-var voznaEmbed = document.getElementById("vozna");
+//var voznaEmbed = document.getElementById("vozna");
 var video_1Embed = document.getElementById("video_1");
 var video_2Embed = document.getElementById("video_2");
 var video_3Embed = document.getElementById("video_3");
@@ -146,10 +146,10 @@ bogachEmbed.insertAdjacentHTML(
   '<iframe class="videoElement" src="https://player.vimeo.com/video/866280321?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="110%" height="110%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 );
 
-voznaEmbed.insertAdjacentHTML(
-  "beforeend",
-  '<iframe class="videoElement" src="https://player.vimeo.com/video/866280349?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="110%" height="110%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
-);
+//voznaEmbed.insertAdjacentHTML(
+//  "beforeend",
+//  '<iframe class="videoElement" src="https://player.vimeo.com/video/866280349?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="110%" height="110%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
+//);
 var attrVV1 = getVideoId(video_1Embed);
 video_1Embed.insertAdjacentHTML(
   "beforeend",
@@ -175,7 +175,7 @@ function startVideoEmbed(element) {
 // if (innerWidth < 991) {
 startVideoEmbed(videoEmbed);
 startVideoEmbed(bogachEmbed);
-startVideoEmbed(voznaEmbed);
+//startVideoEmbed(voznaEmbed);
 // }
 
 // video_play.addEventListener("click", function () {
