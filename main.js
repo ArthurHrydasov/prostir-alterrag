@@ -268,33 +268,33 @@ thirdSectionEmbed.insertAdjacentHTML(
 //  });
 //}
 
-var SectionEmbedAll = document.querySelectorAll(".sheme_section_block");
-var StorageAvail = document.querySelectorAll(".section_storage_available");
-SectionEmbedAll.forEach((element, index) => {
-  storageSections(element);
-  if (index < StorageAvail.length) {
-    StorageAvail[index].textContent = notAccessibilityCounts[element.id] || 0;
-  }
-});
+//var SectionEmbedAll = document.querySelectorAll(".sheme_section_block");
+//var StorageAvail = document.querySelectorAll(".section_storage_available");
+//SectionEmbedAll.forEach((element, index) => {
+//  storageSections(element);
+//  if (index < StorageAvail.length) {
+//    StorageAvail[index].textContent = notAccessibilityCounts[element.id] || 0;
+//  }
+//});
 
-if (window.innerWidth > 991) {
-  const shemeSectionBlocks = document.querySelectorAll(".sheme_section_block");
+//if (window.innerWidth > 991) {
+//  const shemeSectionBlocks = document.querySelectorAll(".sheme_section_block");
 
-  shemeSectionBlocks.forEach((shemeSectionBlock) => {
-    const sectionBlockInfo = shemeSectionBlock.querySelector(
-      ".section_block_info"
-    );
+//  shemeSectionBlocks.forEach((shemeSectionBlock) => {
+//    const sectionBlockInfo = shemeSectionBlock.querySelector(
+//      ".section_block_info"
+//    );
 
-    shemeSectionBlock.addEventListener("mousemove", (event) => {
-      const rect = shemeSectionBlock.getBoundingClientRect();
-      const mouseX = event.clientX - rect.left;
-      const mouseY = event.clientY - rect.top;
+//    shemeSectionBlock.addEventListener("mousemove", (event) => {
+//      const rect = shemeSectionBlock.getBoundingClientRect();
+//      const mouseX = event.clientX - rect.left;
+//      const mouseY = event.clientY - rect.top;
 
-      sectionBlockInfo.style.left = mouseX + "px";
-      sectionBlockInfo.style.top = mouseY - 20 + "px";
-    });
-  });
-}
+//      sectionBlockInfo.style.left = mouseX + "px";
+//      sectionBlockInfo.style.top = mouseY - 20 + "px";
+//    });
+//  });
+//}
 
 var progressBar = document.getElementById("myBar");
 function updateProgressBar() {
