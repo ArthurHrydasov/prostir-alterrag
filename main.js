@@ -92,20 +92,20 @@ animaElements2.forEach((element) => {
   observer2.observe(element);
 });
 
-var allSchemes = document.querySelectorAll(".schem_item");
-var allSchemeIllustrations = document.querySelectorAll(".sheme_section_block");
-allSchemes.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    allSchemes.forEach((other, indexOther) => {
-      other.classList.remove("active");
-      allSchemeIllustrations[indexOther].classList.remove("active");
-    });
-    element.classList.add("active");
-    allSchemeIllustrations[index].classList.add("active");
-  });
-});
+//var allSchemes = document.querySelectorAll(".schem_item");
+//var allSchemeIllustrations = document.querySelectorAll(".sheme_section_block");
+//allSchemes.forEach((element, index) => {
+//  element.addEventListener("click", () => {
+//    allSchemes.forEach((other, indexOther) => {
+//      other.classList.remove("active");
+//      allSchemeIllustrations[indexOther].classList.remove("active");
+//    });
+//    element.classList.add("active");
+//    allSchemeIllustrations[index].classList.add("active");
+//  });
+//});
 
-allSchemes[0].click();
+//allSchemes[0].click();
 
 var allSchemesProgress = document.querySelectorAll(".schem_item_progress");
 var schem_imgs = document.querySelectorAll(".progress_img");
