@@ -136,10 +136,10 @@ function getVideoId(element) {
 //   "beforeend",
 //   '<iframe class="videoElement" src="https://player.vimeo.com/video/865926183?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="100%" height="1000%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
 // );
-videoEmbed.insertAdjacentHTML(
-  "beforeend",
-  '<iframe class="videoElement" src="https://player.vimeo.com/video/865926183?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="100%" height="1000%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
-);
+// videoEmbed.insertAdjacentHTML(
+//   "beforeend",
+//   '<iframe class="videoElement" src="https://player.vimeo.com/video/865926183?loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&controls=0" width="100%" height="1000%" frameborder="0" allow="fullscreen; picture-in-picture"allowfullscreen></iframe>'
+// );
 
 bogachEmbed.insertAdjacentHTML(
   "beforeend",
