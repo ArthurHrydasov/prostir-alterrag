@@ -122,7 +122,7 @@ allSchemesProgress.forEach((element, index) => {
 
 allSchemesProgress[1].click();
 
-var videoEmbed = document.querySelector(".forest_video_embed");
+// var videoEmbed = document.querySelector(".forest_video_embed");
 var bogachEmbed = document.getElementById("bogach");
 //var voznaEmbed = document.getElementById("vozna");
 var video_1Embed = document.getElementById("video_1");
