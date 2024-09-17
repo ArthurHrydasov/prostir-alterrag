@@ -173,7 +173,7 @@ function startVideoEmbed(element) {
   }, 200);
 }
 // if (innerWidth < 991) {
-startVideoEmbed(videoEmbed);
+// startVideoEmbed(videoEmbed);
 startVideoEmbed(bogachEmbed);
 //startVideoEmbed(voznaEmbed);
 // }
